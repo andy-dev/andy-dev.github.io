@@ -5,7 +5,7 @@ First impressions of Dev Bootcamp
 october 31, 2014
 
 
-    My impression of the DBC is that people are engaged, unique and genuinely interested in learning from each other. The DBC experience is an out of the box system to learn something new with all the tools necessary (great teachers, teammates, counselors, new learning techniques, yoga for the body, engineering empathy to improve emotional intelligence to name a few) to surpass your own expectations and limits.
+   My impression of the DBC is that people are engaged, unique and genuinely interested in learning from each other. The DBC experience is an out of the box system to learn something new with all the tools necessary (great teachers, teammates, counselors, new learning techniques, yoga for the body, engineering empathy to improve emotional intelligence to name a few) to surpass your own expectations and limits.
 
    We are always compared to others we have grown accustomed to to that culture. At DBC no one is ranking or grading you on your progress but yourself. Students and teachers are motivated, driven and hungry push each other to another level. It is team. Its a great culture to embrace not only for the program but outside of DBC.
 
