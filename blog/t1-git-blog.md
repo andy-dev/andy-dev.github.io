@@ -25,9 +25,9 @@ october 31, 2014
 
   To get a better grasp here are the primarily steps of using git.
 
-  1) You create a folder where you decide you want to start some work, project, etc… (technical- you type this command: git init)
+  1) You create a folder where you decide you want to start some work, project, etc… 
 
-  2) You tell git, hey git! keep track of this folder. Now everything you do, git is acting like an all mighty all powerful camera watching every little thing you do. 
+  2) You tell git, hey git! keep track of this folder. Now everything you do, git is acting like an all mighty all powerful camera watching every little thing you do. (technical- you type this command: git init)
 
   3) So, when you decide to create a file, edit or make a change you tell git, hey git, you see all these changes I’ve done to the project save them. (technical- this are called commits in git)
 
