@@ -1,0 +1,29 @@
+
+
+#body {background-color: white}
+
+
+
+#header ul li {display: inline; font-size: 40px }
+#header {background-color: grey; width: 100%;}
+a { text-decoration:none; color:white;}
+
+#footer ul li {display: inline; }
+#footer {background-color: grey; width: 100%;}
+
+
+
+
+/*
+body {color:#000080;}
+
+li {color:800080;}
+
+p {margin:0}
+
+a:visited{color:ff0000;}
+
+html {background-color: #ffffff;}
+
+.horizontalLine {border-bottom: 1px solid black;}
+*/
