@@ -25,23 +25,27 @@ body {background-color: black}
 a {text-decoration: none; color: grey}
 
 
-#bridge{
-
-  position: relative;
-  height: 332px;
-  width: 500px;
-  left:500px
-}
-
 
 .footer {
   width:300px;
   height:auto;
   background-color:black;
-  position: absolute;
+  position: relative;
   left:400px;
   bottom:0px;
 }
 
 .footer div {display: inline-block; width: auto; padding: 5px; text-align: right }
 
+
+.write {
+  width:900px;
+  height:auto;
+  background-color:black;
+  position: relative;
+  left:0px;
+  top:20px;
+  text-align: left;
+  color: white;
+
+}

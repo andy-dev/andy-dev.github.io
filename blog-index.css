@@ -25,14 +25,6 @@ body {background-color: black}
 a {text-decoration: none; color: grey}
 
 
-#bridge{
-
-  position: relative;
-  height: 332px;
-  width: 500px;
-  left:500px
-}
-
 
 .footer {
   width:300px;
