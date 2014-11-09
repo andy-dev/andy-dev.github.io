@@ -49,3 +49,7 @@ a {text-decoration: none; color: grey}
   color: white;
 
 }
+
+#imgnav {
+  display:block;
+}
