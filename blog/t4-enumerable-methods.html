@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<meta charset ="utf-8">
+  <html>
+    <head> <link rel="stylesheet" type="text/css" href="blog-template.css">
+      <title>group_by Enumerable</title>
+    </head>
+
+      <body>
+
+          <div class="header">
+            <p><span style="color:white;font-size:40px">Blog/</span> <span style="color:white; font-size:15px">Learn this enumerable method now!</span></p>
+          </div>
+
+          <div class="navbar">
+            <div><a href= "http://andy-dev.github.io/index.html" > Home </a></div>
+            <div><a href= "#" > About </a></div>
+            <div><a href= "#" > Projects </a></div>
+            <div><a href= "http://andy-dev.github.io/blog/blog-index.html" > Blog </a></div>
+            <div><a href= "#" > Contact </a></div>
+          </div>
+
+
+          <div class="write">
+
+            <p >november 20,2014 </p> <br></br>
+            <p>
+            Hi and welcome! The goal of this blog is to provide an explanation of the ruby method group_by. It is a great method to have in your arsenal. <br></br>
+
+            Just as the name says it, group_by is a method that lets you group elements.
+
+            <p>Pointers</p>
+
+            <ul>
+              <li> group_by will return a hash </li>
+              <li> There are many ways that you can group (see examples below)</li>
+            </ul>
+
+
+          <br></br>
+
+
+            <img src= "../imgs/enum1.png"; height=50px width:150px> </img>
+            <p>Source:(1)</p>
+            <p>In this example we check all elements, i.e 1,2,3,4,5,6 (remember 1..6 includes all elements and 1...6 will include from 1 to 5). It goes through each using the modulo operator and depending on the output it groups the elements into a hash. So in this example for 3%3 and 6%3 but return a 0 therefore the hash gives a key 0 and value of [3,6]. It does this for every element and groups accordingly.</p>
+
+            <img src= "../imgs/enumlength.png"; height=100px width:400px> </img>
+            <p>Source:(2)</p>
+
+            <p>In this example we check all elements, and group by lenght of string.</p>
+
+
+            <img src= "../imgs/enumletter.png"; height=100px width:400px> </img>
+            <p>Source:(2)</p>
+            <p>In this example we check all elements, and group by first letter.(by the way, see the name gyrfalcon? it is a really cool bird of prey)</p>
+
+            <p>Now it it up to your imagination, play with it and you will find really cool way to manage collections of data</p>
+
+
+
+            Andy-dev —OVER AND OUT
+            <br></br>
+
+            Sources--Highly recommended for additional information
+            <br></br>
+
+            <span style="text-color: blue">
+            <a href ="http://markusjais.com/the-group_by-method-from-rubys-enumerable-mixin-and-compared-with-scal/">Source 1-Click Here</a> <br></br>
+
+            <a href = "http://ruby-doc.org/core-2.1.5/Enumerable.html">Source 2-Ruby Docs-Click Here</a><br></br>
+
+            </span>
+
+
+
+            </p>
+          </div>
+
+
+
+
+
+
+          <div class="footer">
+
+              <center>
+                <div><a href= "https://www.facebook.com/andres.macedo.12" > <img src= "../imgs/fblogo.jpg"; height=30px width:30px> </img>   </a> </div>
+
+              <div><a href= "https://github.com/andy-dev" > <img src= "../imgs/githublogo.jpg"; height=30px width:30px> </img>   </a> </div>
+
+              <div><a href= "https://plus.google.com/u/0/113272796716654258236/posts/p/pub" > <img src= "../imgs/google+logo.jpg"; height=30px width:30px> </img>   </a> </div>
+
+              <div><a href= "http://instagram.com/armacedo" > <img src= "../imgs/instalogo.jpg"; height=30px width:30px> </img>   </a> </div>
+
+              <div><a href= "https://www.linkedin.com/profile/view?id=97605311&trk=nav_responsive_tab_profile" > <img src= "../imgs/linkedinlogo.jpg"; height=30px width:30px> </img>   </a> </div>
+
+              <div><a href= "https://twitter.com/Macedo88" > <img src= "../imgs/twitterlogo.jpg"; height=30px width:30px> </img>   </a> </div>
+              </center>
+
+            </div>
+
+      </body>
+
+
+  </html>
