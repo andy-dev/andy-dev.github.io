@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<meta charset ="utf-8">
+  <html>
+    <head> <link rel="stylesheet" type="text/css" href="blog-template.css">
+      <title>Ruby Classes</title>
+    </head>
+
+      <body>
+
+          <div class="header">
+            <p><span style="color:white;font-size:40px">Blog/</span> <span style="color:white; font-size:15px">Crash course on Ruby Classes</span></p>
+          </div>
+
+          <div class="navbar">
+            <div><a href= "http://andy-dev.github.io/index.html" > Home </a></div>
+            <div><a href= "#" > About </a></div>
+            <div><a href= "#" > Projects </a></div>
+            <div><a href= "http://andy-dev.github.io/blog/blog-index.html" > Blog </a></div>
+            <div><a href= "#" > Contact </a></div>
+          </div>
+
+
+          <div class="write">
+
+            <p >november 9,2014 </p> <br></br>
+            <p> This is a crash course on how to build a class in ruby. Lets rock and roll and create a class.<br><br>
+
+            <em>In the next pictures pay particular attention to syntax.</em><br><br>
+            In your text editor create a new class name it using a capital letter and save with .rb extension.<br></br>
+
+
+
+            <img src= "../imgs/img1class.png" </img><br><br>
+
+
+            Next we create a method called initialize. Basically what this method does is that every time you create  new client, it "tags/expects/needs" these two characteristics (first_name, last_name). This are called instance variables and you can spot them with the @. Think about it this way, imagine we have only two clients, they both belong to the class Clients but one client is Joe Black and the other is Mike Edmunds. <br><br>
+
+
+            <img src= "../imgs/img2class.png" </img> <br><br>
+
+
+            Now lets create two instances/objects. Check the syntax, we do it by using variables, one will name client_one and the other client_two.
+
+            <img src= "../imgs/img3class.png"</img> <br><br>
+
+            There we have it. We have created a class! But its a little dull, lets make this class do something, how about a greeting? <br><br>
+
+            The #{} syntax is string interpolation. It basically takes what you give it, evaluates it and gives you a string so you can print to console. Here you can see that we call the method greeting outside the class. <br><br>
+
+            <img src= "../imgs/img4class.png";height=160px width:634px></img> <br><br>
+
+            Now lets run our program. Go to your terminal and run the program. Remember that to run a program you type ruby nameoftheprogram.rb I named my program clientsclass.rb <br><br>
+
+            <img src= "../imgs/img5class.png"</img> <br><br>
+
+            It worked, here is our greeting message!<br><br>
+
+            <img src= "../imgs/img6class.png"; height=160px width:634px></img> <br><br>
+
+            There you go! That was a crash course on the building blocks of a class in ruby. Now it is up to your imagination! <br><br>
+
+            Andy-dev —OVER AND OUT <br><br>
+
+          </div>
+
+
+
+
+
+
+          <div class="footer">
+
+              <center>
+                <div><a href= "https://www.facebook.com/andres.macedo.12" > <img src= "../imgs/fblogo.jpg"; height=30px width:30px> </img>   </a> </div>
+
+              <div><a href= "https://github.com/andy-dev" > <img src= "../imgs/githublogo.jpg"; height=30px width:30px> </img>   </a> </div>
+
+              <div><a href= "https://plus.google.com/u/0/113272796716654258236/posts/p/pub" > <img src= "../imgs/google+logo.jpg"; height=30px width:30px> </img>   </a> </div>
+
+              <div><a href= "http://instagram.com/armacedo" > <img src= "../imgs/instalogo.jpg"; height=30px width:30px> </img>   </a> </div>
+
+              <div><a href= "https://www.linkedin.com/profile/view?id=97605311&trk=nav_responsive_tab_profile" > <img src= "../imgs/linkedinlogo.jpg"; height=30px width:30px> </img>   </a> </div>
+
+              <div><a href= "https://twitter.com/Macedo88" > <img src= "../imgs/twitterlogo.jpg"; height=30px width:30px> </img>   </a> </div>
+              </center>
+
+            </div>
+
+      </body>
+
+
+  </html>
+
+
+
+
+Instance variables belong to a particular object(in short you will see one will name client_one and the other one client_two) or as the name says it “instance” of the class.
