@@ -1,4 +1,7 @@
 body {background-color: black}
+p {
+        font-family:'Nunito', sans-serif;
+      }
 
 .header {
   width:500px;
@@ -43,11 +46,11 @@ a {text-decoration: none; color: grey}
   height:auto;
   background-color:black;
   position: relative;
-  left:0px;
+  left:5px;
   top:20px;
   text-align: left;
   color: white;
-
+  font-family:'Nunito', sans-serif;
 }
 
 #imgnav {

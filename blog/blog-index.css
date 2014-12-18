@@ -1,5 +1,9 @@
 body {background-color: black}
 
+p {
+        font-family:'Nunito', sans-serif;
+      }
+
 
 
 .header {
