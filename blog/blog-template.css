@@ -44,13 +44,14 @@ a {text-decoration: none; color: grey}
 .write {
   width:900px;
   height:auto;
-  background-color:black;
+  background-color:#959595;
   position: relative;
-  left:5px;
+  left:30px;
   top:20px;
   text-align: left;
-  color: white;
+  color: black;
   font-family:'Nunito', sans-serif;
+
 }
 
 #imgnav {
