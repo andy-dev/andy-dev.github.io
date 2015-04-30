@@ -42,6 +42,13 @@ $(document).ready(function() {
     paginationSpeed : 400,
     singleItem:true
   });
+
+  $("#owl-demo6").owlCarousel({
+    navigation : true,
+    slideSpeed : 300,
+    paginationSpeed : 400,
+    singleItem:true
+  });
 });
 
 
