@@ -1,88 +1,159 @@
-<!doctype html>
-<!--[if IE 9]><html class="lt-ie10" lang="en" > <![endif]-->
-<html class="no-js" lang="en" data-useragent="Mozilla/5.0 (compatible; MSIE 10.0; Windows NT 6.2; Trident/6.0)">
+<!DOCTYPE html>
+<html>
 <head>
-<meta charset="utf-8"/>
-<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<title>Andy-Dev | Portfolio </title>
-
-<link rel="stylesheet" href="stylesheets/foundation.css"/>
-<link rel="stylesheet" href="stylesheets/custom.css"/>
-<script src="stylesheets/modernizr.js"></script>
+<meta charset="utf-8">
+<title>Address Validation</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+<link rel="stylesheet" href="styles.css">
 </head>
 
-  <body>
-    <link href="http://fonts.googleapis.com/css?family=Raleway:600,400,200" rel="stylesheet" type="text/css">
-    <link href="http://fonts.googleapis.com/css?family=Shadows+Into+Light" rel="stylesheet" type="text/css">
+<body>
 
-    <center>
-     <h4> WE MOVED FIND US AT :</h4>
-      <h1></h1><a href="http://www.andresmacedo.com">www.andresmacedo.com</a></h1>
-    </center>
+<div class="container">
+  <div class="row">
+    <div class="col-md-4">
+      <h3 id="yeah baby">Address Validation</h3>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-8">
+      <form id="myForm">
+        <fieldset>
+          <div class="form-group">
+            <label for="textinput">Line 1</label>
+            <input type="text" name="a" placeholder="Address Line 1"class="streetAddress form-control" required="true">
+          </div>
 
-    <!-- <div class="row">
-      <div class="small-12 medium-4 large-6 columns namelogo">
-        <h1>ANDRÉS MACEDO <span style="gray"><h6><em><span style="color:grey;">WEB DEVELOPER | DERIVATIVES TRADER | THINKER </em></h6></span></h1>
+          <div class="form-group">
+            <label for="textinput">Line 2</label>
+            <input type="text" name="b" placeholder="Address Line 2" class="street2 form-control">
+          </div>
+
+          <div class="form-group">
+            <label for="textinput">City</label>
+            <input type="text" name="c" placeholder="City" name="c"  class="city form-control" required="true">
+          </div>
+
+          <div class="form-group">
+            <label for="textinput">State</label>
+            <input type="text" name="d"placeholder="State" name="d"  class="state form-control" required="true">
+          </div>
+
+          <div class="form-group">
+            <label for="textinput">Postcode</label>
+            <input type="text" name="e"placeholder="Post Code" name="e" class="postCode form-control" required="true">
+          </div>
+
+          <div class="form-group">
+              <div class="pull-right">
+                <button type="submit" style="display:none"class="mmodal btn btn-default" data-toggle="modal" data-target="#myModal"> </button><!-- use in js to open modal -->
+                <button type="submit" class="validateButton btn btn-default">Validate Address </button>
+              </div>
+          </div>
+
+        </fieldset>
+      </form>`
+    </div>
+  </div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Address Validation Results</h4>
       </div>
-      <div class="small-12 medium-8 large-6 columns">
-        <div class="nav-bar">
-          <ul class="button-group">
-            <li><a href="http://andy-dev.github.io/index.html" class="button">Home</a></li>
-            <li><a href="http://andy-dev.github.io/projects.html" class="button">Projects</a></li>
-            <li><a href="http://andy-dev.github.io/index.html" class="button">Contact</a></li>
-          </ul>
-        </div>
+      <div class="modal-body">
+      <!-- Handlebars will add server response here -->
       </div>
-      <hr>
-    </div>
-
-    <div class="row about">
-    <div class="medium-6 large-8 columns">
-      <h4>About</h4>
-      <p>I have a compelling drive to understand the way things work. I am action-oriented and like to be up and about doing things. I am loyal to my causes and beliefs and believe programming to be a canvas to express rational, logical and artistic problem solving. </p>
-
-      </p>Working in a trading desk for many years, I learned to work under stress and vast amounts of responsibility. Market fluctuations and intense atmosphere elevated my sense of expediency and grasp of the details which enables quick, effective decisions.</p>
-
-      <p>Competitive equestrian show jumper for 10+ years and represented Mexico in multiple international events.</p>
-    </div>
-
-    <div class="medium-6 large-4 columns">
-      <img src="imgs/cover_canyon.jpg">
-    </div>
-
-    </div>
-
-    <div class="row contact">
-    <hr>
-      <div class="large-12 columns">
-      <h4>Contact Me</h4>
-        <div class="large-4 columns">
-          <strong>Email</strong> <a href="mailto:example@tutorialspark.com"> : andres.macedo@gmail.com </a>
-        </div>
-        <div class="large-4 columns">
-          <strong>Phone</strong>: 347-735-1586
-        </div>
-      </div>
-    </div>
-
-    <footer class="row">
-    <div class="large-12 columns">
-      <div class="row about">
-        <div class="large-6 columns">
-        <ul class="inline-list right">
-          <div class="footer"><center>
-            <a href= "https://github.com/andy-dev" > <img src= "imgs/footer_github_logo.png"> </img></a>
-            <a href= "http://instagram.com/armacedo" > <img src= "imgs/footer_instagram_logo.png"></img></a>
-            <a href= "https://www.linkedin.com/in/andresmacedo" > <img src= "imgs/footer_linkedin_logo.png"> </img></a>
-            <a href= "https://twitter.com/Macedo88" > <img src= "imgs/footer_twitter_logo.png"> </img></a>
-            <a href= "https://www.facebook.com/andres.macedo.12" > <img src= "imgs/footer_fb_logo.png"></img></a>
-          </div></center>
-        </ul>
-        </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
       </div>
     </div>
-    </footer>
+  </div>
+</div>
 
- -->
+<button type="button"  style="display:none" class="myMod2 btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal2"></button>
+  <div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Please Provide: Street City and State </h4>
+      </div>
+      <div class="modal-body">
+        <div class="container">
+          <!-- <img src="https://toddrupe.files.wordpress.com/2015/10/gandalf-you-shall-not-pass-ian-mckellen1.jpg" alt="Smiley face" height="320" width="525"> -->
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+  </div>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.5/handlebars.js"></script>
+<script src="addressValidator.js"></script>
+
+<script id="address_template" type="text/x-handlebars-template">
+  <table class="table table-hover">
+    <thead>
+      <tr>
+        <th>Addresses Found:</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>
+          <p>{{data.delivery_line_1}}</p>
+          <p>{{data.last_line}}</p>
+        </td>
+      <tr>
+    </tbody>
+  </table>
+</script>
+
+<script id="multiple_address_template" type="text/x-handlebars-template">
+  <table class="table table-hover">
+    <thead>
+      <tr>
+        <th>Multiple Addresses Found:</th>
+        <th>
+          <div class = "pull-right">
+            Choose Address
+          </div>
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+    {{#each apiData}}
+      <tr>
+
+        <td>
+         <p>{{delivery_line_1}}<p>
+         <p>{{last_line}}</p>
+        </td>
+        <td>
+          <div class="pull-right">
+            <button rel="useAddress" class="btn btn-primary"> use </button>
+            <div style="display:none">{{delivery_line_1}}</div>
+            <div style="display:none">{{components.city_name}}</div>
+            <div style="display:none">{{components.state_abbreviation}}</div>
+            <div style="display:none">{{components.zipcode}}</div>
+          </div>
+        </td>
+      <tr>
+    {{/each}}
+    </tbody>
+  </table>
+</script>
+
 </body>
 </html>
+
