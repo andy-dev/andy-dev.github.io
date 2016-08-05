@@ -36,20 +36,21 @@ function scriptLoadHandler() {
     main(); 
 }
 
+function loadCss(href){
+    var link_tag= document.createElement('link');
+    link_tag.setAttribute("type", "text/css");
+    link_tag.setAttribute("rel", "stylesheet");
+    link_tag.setAttribute("href", href);
+    (document.getElementsByTagName("head")[0] || document.documentElement).appendChild(link_tag);
+}
+
 /******** Our main function ********/
 function main() { 
     jQuery(document).ready(function($) { 
         /******* Load CSS *******/
         
-        var css_link= $("<link>", {
-            rel:"stylesheet",
-            type: "text/css",
-            href:"styles.css"
-        });
-        
-        css_link.appendTo('head');
+        loadCss("http://andy-dev.github.io/wid/styles.css");
                 
-
         /******* Load HTML *******/
         var jsonp_url = "http://al.smeuh.org/cgi-bin/webwidget_tutorial.py?callback=?";
         
