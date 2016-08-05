@@ -15,7 +15,7 @@ if (window.jQuery === undefined || window.jQuery.fn.jquery !== '1.4.2') {
               scriptLoadHandler();
           }
       };
-    } else { // Other browsers
+    } else {
       script_tag.onload = scriptLoadHandler;
     }
     // Try to find the head, otherwise default to the documentElement
@@ -38,17 +38,22 @@ function scriptLoadHandler() {
 /******** Our main function ********/
 function main() { 
     jQuery(document).ready(function($) { 
-       
-      console.log("hi from script");
-  
-      function our_callback(json_data) {
-        console.log(json_data)
-      }
-  
-      our_callback( {"foo": 42, "bar": 23 } )
-      
-      
-  });
+        /******* Load CSS *******/
+        var css_link = $("<link>", { 
+            rel: "stylesheet", 
+            type: "text/css", 
+            href: "style.css" 
+        });
+        css_link.appendTo('head');          
+
+        /******* Load HTML *******/
+        var jsonp_url = "http://al.smeuh.org/cgi-bin/webwidget_tutorial.py?callback=?";
+        $.getJSON(jsonp_url, function(data) {
+          $('#example-widget-container').html("This data comes from another server: " + data.html);
+        });
+    });
 }
 
 })();
+
+
