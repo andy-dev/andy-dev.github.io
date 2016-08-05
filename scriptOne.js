@@ -43,8 +43,10 @@ function main() {
 
         /******* Load HTML *******/
         var jsonp_url = "http://al.smeuh.org/cgi-bin/webwidget_tutorial.py?callback=?";
+        
         $.getJSON(jsonp_url, function(data) {
-          $('#example-widget-container').html("This data comes from another server: " + data.html);
+          
+          $('.example-widget-container').html("This data comes from another server: " + data.html);
         });
     });
 }
