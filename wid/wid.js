@@ -40,6 +40,14 @@ function scriptLoadHandler() {
 function main() { 
     jQuery(document).ready(function($) { 
         /******* Load CSS *******/
+        
+        var css_link= $("<link>", {
+            rel="stylesheet",
+            type: "text/css",
+            href="styles.css"
+        });
+        
+        css_link.appendTo('head');
                 
 
         /******* Load HTML *******/
