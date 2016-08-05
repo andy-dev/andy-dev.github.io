@@ -42,9 +42,9 @@ function main() {
         /******* Load CSS *******/
         
         var css_link= $("<link>", {
-            rel="stylesheet",
+            rel:"stylesheet",
             type: "text/css",
-            href="styles.css"
+            href:"styles.css"
         });
         
         css_link.appendTo('head');
