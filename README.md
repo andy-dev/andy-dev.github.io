@@ -4,7 +4,7 @@
  - [Overview](#overview)
  - [Features](#Publisher and Widget Folders)
  - [Getting Help](#Publishers)
- - [Requirements](#Widget)
+ - [Widget](#Widget)
  - [Quick Start](#Development SetUp Widget Publisher)
  - [Quick Start](#Up and Running)
 
